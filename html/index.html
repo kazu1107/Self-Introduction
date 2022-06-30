@@ -4,20 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Self-Introduction</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
-  <header>
+  <header class="header-flex">
     <h1>
       <a href="index.html">
         <img src="../img/img_2.png" alt="家">
       </a>
-    </h1>
-    <h1>
-      Self-Introduction
     </h1>
     <nav>
       <ul>
@@ -28,54 +24,58 @@
       </ul>
     </nav>
   </header>
-
-  <h1>HOME</h1>
-  <section>
+  <section class="title">
+    <h1>HOME</h1>
+  </section>
+  <section class="counter">
     <p>アクセスカウンタ</p>
   </section>
   <section>
-    <img src="../img/img_1.JPG" width="368" height="552">
+    <div class="mypic">
+      <img src="../img/img_1.JPG" width="368" height="552">
+    </div>
+    <div class="profile">
+      <h2>プロフィール</h2>
+      <table border="0">
+        <tr>
+          <th>【名前】</th>
+          <th>俵谷 一帆</th>
+        </tr>
+        <tr>
+          <th>【電話番号】</th>
+          <th>08060960800</th>
+        </tr>
+        <tr>
+          <th>【住所】</th>
+          <th>北海道 札幌市中央区 南7条西17丁目 2-20</th>
+        </tr>
+        <tr>
+          <th>【eメール】</th>
+          <th>kazu0711tawa@gmail.com</th>
+        </tr>
+        <tr>
+          <th>【言語】</th>
+          <th>HTML/CSS, JavaScript, Ruby, React, Python</th>
+        </tr>
+        <tr>
+          <th>【Github】</th>
+          <th><a href="https://github.com/kazu1107" target="_blank">https://github.com/kazu1107</a></th>
+        </tr>
+      </table>
+    </div>
   </section>
-  <section>
-    <h2>プロフィール</h2>
-    <table border="0">
-      <tr>
-        <th>【名前】</th>
-        <th>俵谷 一帆</th>
-      </tr>
-      <tr>
-        <th>【電話番号】</th>
-        <th>08060960800</th>
-      </tr>
-      <tr>
-        <th>【住所】</th>
-        <th>北海道 札幌市中央区 南7条西17丁目 2-20</th>
-      </tr>
-      <tr>
-        <th>【eメール】</th>
-        <th>kazu0711tawa@gmail.com</th>
-      </tr>
-      <tr>
-        <th>【言語】</th>
-        <th>HTML/CSS, JavaScript, Ruby, React, Python</th>
-      </tr>
-      <tr>
-        <th>【Github】</th>
-        <th><a href="https://github.com/kazu1107" target="_blank">https://github.com/kazu1107</a></th>
-      </tr>
-    </table>
-  </section>
-  <section>
+  <section class="app">
     <h2>API</h2>
-    <p>内容</p>
   </section>
   <footer class="footer">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="history.html">HISTORY</a></li>
-      <li><a href="secret.html">SECRET</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="secret.html">SECRET</a></li>
+      </ul>
+    </nav>
     <p class="copyright">©Copyright Self-Introduction,ALL rights reserved.</p>
   </footer>
 </body>
