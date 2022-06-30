@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*ここからヘッダーの内容*/
+/* * {
+  margin: 0;
+  padding: 0;
+}
+*/
+.title {
+  font-size: 200%;
+}
+
+ul {
+  list-style: none;
+}
+
+div {
+  padding: 0 30px;
+}
+
+.header-flex {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.header-flex nav {
+  margin-left: auto;
+}
+
+.header-flex ul {
+  display: flex;
+}
+
+.header-flex ul li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ここまでヘッダーの内容*/
+/**/
+/*ここからhistoryの内容*/
+.title {
+  text-align: center;
+}
+
+.history-list {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.shikaku-list {
+  text-align: center;
+}
+
+/*ここまでhistoryの内容*/
+/**/
+/**/
+/*ここからフッターの内容*/
+
+
+.footer nav {
+  margin-top: 50px;
+  margin-left: auto;
+  display: flex;
+  height: 20px;
+  align-items: center;
+}
+
+.footer ul {
+  display: flex;
+}
+
+.footer ul li {
+  margin-left: 20px;
+}
+
+.footer .copyright {
+  font-size: 50%;
+  text-align: center;
+}
+
+/*ここまでフッターの内容*/
