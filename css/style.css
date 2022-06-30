@@ -67,8 +67,18 @@ table {
   text-align: center;
 }
 
+.description .pr-description {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .apply {
   text-align: center;
+}
+
+.description .apply-description {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /*ここまでaboutの内容*/
