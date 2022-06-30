@@ -81,8 +81,24 @@ table {
 }
 
 /*ここまでaboutの内容*/
-/**/
-/**/
+/*ここからindexの内容*/
+.counter {
+  text-align: center;
+}
+
+.my-profile .my-pic {
+  text-align: center;
+}
+
+.my-profile .profile {
+  text-align: center;
+}
+
+.app {
+  text-align: center;
+}
+
+/*ここまでindexの内容*/
 /*ここからフッターの内容*/
 
 
