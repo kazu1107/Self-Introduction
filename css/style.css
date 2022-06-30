@@ -62,6 +62,16 @@ table {
 }
 
 /*ここまでhistoryの内容*/
+/*ここからaboutの内容*/
+.pr {
+  text-align: center;
+}
+
+.apply {
+  text-align: center;
+}
+
+/*ここまでaboutの内容*/
 /**/
 /**/
 /*ここからフッターの内容*/
