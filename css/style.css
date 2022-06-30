@@ -46,8 +46,9 @@ a {
   text-align: center;
 }
 
-.history-list {
+.origin-list .history-list {
   text-align: center;
+  margin: 0 auto;
 }
 
 table {
@@ -56,8 +57,27 @@ table {
   text-align: left;
 }
 
-.shikaku-list {
+.origin-list .shikaku-list {
   text-align: center;
+  margin: 0 auto;
+}
+
+.origin-list {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .origin-list {
+    display: block;
+  }
+
+  .origin-list .history-list {
+    width: 100%;
+  }
+
+  .origin-list .shikaku-list {
+    width: 100%;
+  }
 }
 
 /*ここまでhistoryの内容*/
