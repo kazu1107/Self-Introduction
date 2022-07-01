@@ -10,9 +10,12 @@
 
 <body>
   <header class="header">
-    <h1>
-      <img src="image.png" alt="ロゴ" title="ヘッダーロゴ">
-    </h1>
+    <div class="header-layout">
+      <h1>Self-Introduction</h1>
+      <div class='btn'>
+        <a href=''>Secret</a>
+      </div>
+    </div>
     <div id="menu-box">
       <div id="toggle"><a href="#">menu</a></div>
       <ul id="menu" class="">
@@ -24,6 +27,9 @@
     </div>
   </header>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <main>
+
+  </main>
   <script>
     $(function () {
       $("#toggle").click(function () {
@@ -39,6 +45,29 @@
       });
     });
   </script>
+  <footer>
+    <div class="foot-wrap">
+      <div class="menu-left">
+        <h3>MENU</h3>
+        <ul class="foot-left">
+          <li><a href="./index.html">TOP</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./history.html">HISTORY</a></li>
+          <li><a href="./favorite.html">FAVORITE</a></li>
+        </ul>
+      </div>
+      <div class="menu-center">
+        <h3>Link</h3>
+        <ul class="foot-center">
+          <li><a href="https://github.com/kazu1107">Github</a></li>
+        </ul>
+      </div>
+
+      <small class="cmark">:copyright:copyright 2022
+        <a href="#">Self-Introduction.</a>
+      </small>
+    </div>
+  </footer>
 </body>
 
 </html>

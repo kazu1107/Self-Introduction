@@ -1,8 +1,43 @@
 @charset "UTF-8";
 
+
+body {
+  margin: 0;
+}
+
+/* ヘッダーここから　*/
+
+.header div h1 {
+  line-height: 260%;
+  font-size: 320%;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  line-height: 50px;
+}
+
+.header .header-layout {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+  position: relative;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 #menu {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
@@ -39,7 +74,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   #menu {
     display: none;
   }
@@ -97,3 +132,106 @@
     margin-top: 2px;
   }
 }
+
+.btn {
+
+  margin: 5px 20px 5px auto;
+  line-height: 35px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background: #4f4f74;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+.btn a:hover {
+  background: #90ad77;
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+/*　ヘッダーここまで　*/
+/* メインここから */
+
+/* メインここまで */
+/* フッターここから */
+
+footer {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.foot-wrap .menu-left,
+.menu-center,
+.menu-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin: 10px auto;
+}
+
+.foot-wrap ul {
+  list-style: none;
+  padding: 0;
+  line-height: 40px;
+}
+
+.foot-wrap {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.foot-wrap h3 {
+  border-bottom: 3px solid #2fccba;
+  padding: 10px;
+}
+
+.foot-wrap a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot-wrap a:hover {
+  color: deeppink;
+}
+
+.foot-wrap .cmark {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid gray;
+  width: 80%;
+  margin: 0 auto;
+  color: gray;
+}
+
+@media screen and (max-width: 767px) {
+
+  .foot-wrap .menu-left,
+  .menu-center,
+  .menu-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .foot-wrap .cpr {
+    display: inline;
+  }
+}
+
+/* フッターここまで */
