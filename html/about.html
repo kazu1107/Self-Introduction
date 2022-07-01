@@ -8,3 +8,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<body>
+  <header class="header">
+    <div class="header-layout">
+      <h1>Self-Introduction</h1>
+      <div class='btn'>
+        <a href=''>Secret</a>
+      </div>
+    </div>
+    <div id="menu-box">
+      <div id="toggle"><a href="#">menu</a></div>
+      <ul id="menu" class="">
+        <li><a href="./index.html">TOP</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./history.html">HISTORY</a></li>
+        <li><a href="./favorite.html">FAVORITE</a></li>
+      </ul>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <div class="profile">
+    <img class="profile__img" src="../img/about.jpg">
+    <div class="profile__name">名字 名前</div>
+    <div class="profile__yomi">Namae Myouji</div>
+    <div class="profile__desc">ここに簡単な自己紹介が入ります。ここに簡単な自己紹介が入ります。ここに簡単な自己紹介が入ります。ここに簡単な自己紹介が入ります。</div>
+  </div>
+  <script>
+    $(function () {
+      $("#toggle").click(function () {
+        $("#menu").slideToggle();
+        return false;
+      });
+      $(window).resize(function () {
+        var win = $(window).width();
+        var p = 480;
+        if (win > p) {
+          $("#menu").show();
+        }
+      });
+    });
+  </script>
+  <footer>
+    <div class="foot-wrap">
+      <div class="menu-left">
+        <h3>MENU</h3>
+        <ul class="foot-left">
+          <li><a href="./index.html">TOP</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./history.html">HISTORY</a></li>
+          <li><a href="./favorite.html">FAVORITE</a></li>
+        </ul>
+      </div>
+      <div class="menu-center">
+        <h3>Link</h3>
+        <ul class="foot-center">
+          <li><a href="https://github.com/kazu1107">Github</a></li>
+        </ul>
+      </div>
+
+      <small class="cmark">:copyright:copyright 2022
+        <font color="white">Self-Introduction.</font>
+      </small>
+    </div>
+  </footer>
+</body>
+
+</html>

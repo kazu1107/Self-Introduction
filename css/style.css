@@ -7,17 +7,18 @@ body {
 
 /* ヘッダーここから　*/
 
-.header div h1 {
+.header .header-layout h1 {
   line-height: 260%;
   font-size: 320%;
   color: white;
   font-weight: 900;
-  margin: 0;
+  margin: 10px;
   line-height: 50px;
 }
 
 .header .header-layout {
   display: flex;
+  height: 60px;
   background-color: #333;
   justify-content: center;
   position: relative;
@@ -48,6 +49,7 @@ html {
   width: 25%;
   margin: 0;
   padding: 0;
+  border-top: 2px solid hsl(0, 0%, 38%);
 }
 
 #menu li a {
@@ -60,7 +62,8 @@ html {
 }
 
 #menu li a:hover {
-  background: #444;
+  background: rgb(90, 90, 90);
+  transition: 0.7s;
 }
 
 #toggle {
@@ -70,7 +73,7 @@ html {
 @media only screen and (max-width: 768px) {
   #menu li {
     width: 50%;
-    border-bottom: 1px solid #444;
+
   }
 }
 
@@ -88,6 +91,7 @@ html {
     position: relative;
     width: 100%;
     background: #222;
+
   }
 
   #toggle a {
@@ -98,6 +102,10 @@ html {
     color: #fff;
     text-align: center;
     text-decoration: none;
+  }
+
+  #toggle a:hover {
+    background: #444;
   }
 
   #toggle:before {
@@ -134,8 +142,7 @@ html {
 }
 
 .btn {
-
-  margin: 5px 20px 5px auto;
+  margin: 15px 50px 10px auto;
   line-height: 35px;
   font-size: 20px;
   position: absolute;
@@ -144,18 +151,18 @@ html {
 
 .btn a {
   display: block;
-  width: 100%;
+  width: 160%;
   height: 100%;
   text-decoration: none;
-  background: #4f4f74;
+  background: #616161;
   text-align: center;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 12px;
   transition: all 0.4s ease;
 }
 
 .btn a:hover {
-  background: #90ad77;
+  background: #181818;
   color: #FFFFFF;
   margin-left: 0px;
   margin-top: 0px;
@@ -165,7 +172,65 @@ html {
 /*　ヘッダーここまで　*/
 /* メインここから */
 
+.main-top {
+  background-color: #4f4f74;
+}
+
+.main-top .greeting {
+  line-height: 80px;
+  font-size: 320%;
+  font-weight: 900;
+  text-align: center;
+}
+
 /* メインここまで */
+/* aboutここから */
+
+.profile {
+  background: #333;
+  width: 250px;
+  padding: 1.6rem;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+
+.profile__img {
+  width: 100%;
+  max-width: 200px;
+
+}
+
+.profile__name,
+.profile__yomi,
+.profile__desc {
+  color: #fff;
+}
+
+.profile__name {
+  padding: 1.6rem 0 .2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.profile__yomi {
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  opacity: .7;
+}
+
+.profile__desc {
+  padding: 1.6rem 0 0;
+  line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    height: 300px;
+  }
+}
+
+/* aboutここまで */
 /* フッターここから */
 
 footer {
@@ -197,7 +262,8 @@ footer {
 }
 
 .foot-wrap h3 {
-  border-bottom: 3px solid #2fccba;
+  /*border-bottom: 3px solid #2fccba;*/
+  border-bottom: 2px solid hsl(0, 0%, 38%);
   padding: 10px;
 }
 
@@ -213,7 +279,7 @@ footer {
 .foot-wrap .cmark {
   display: block;
   padding: 10px;
-  border-top: 1px solid gray;
+  border-top: 1px solid #616161;
   width: 80%;
   margin: 0 auto;
   color: gray;
