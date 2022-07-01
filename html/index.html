@@ -9,75 +9,36 @@
 </head>
 
 <body>
-  <header class="header-flex">
+  <header class="header">
     <h1>
-      <a href="index.html">
-        <img src="../img/img_2.png" alt="家">
-      </a>
+      <img src="image.png" alt="ロゴ" title="ヘッダーロゴ">
     </h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="history.html">HISTORY</a></li>
-        <li><a href="login.html">LOGIN</a></li>
+    <div id="menu-box">
+      <div id="toggle"><a href="#">menu</a></div>
+      <ul id="menu" class="">
+        <li><a href="./index.html">TOP</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./history.html">HISTORY</a></li>
+        <li><a href="./favorite.html">FAVORITE</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
-  <section class="title">
-    <h1>HOME</h1>
-  </section>
-  <section class="counter">
-    <p>アクセスカウンタ</p>
-  </section>
-  <section class="my-profile">
-    <div class="my-pic">
-      <img src="../img/img_1.JPG" height="640">
-    </div>
-    <div class="profile">
-      <h2>プロフィール</h2>
-      <table border="0">
-        <tr>
-          <th>【名前】</th>
-          <th>俵谷 一帆</th>
-        </tr>
-        <tr>
-          <th>【電話番号】</th>
-          <th>08060960800</th>
-        </tr>
-        <tr>
-          <th>【住所】</th>
-          <th>北海道 札幌市中央区 南7条西17丁目 2-20</th>
-        </tr>
-        <tr>
-          <th>【eメール】</th>
-          <th>kazu0711tawa@gmail.com</th>
-        </tr>
-        <tr>
-          <th>【言語】</th>
-          <th>HTML/CSS, JavaScript, Ruby, React, Python</th>
-        </tr>
-        <tr>
-          <th>【Github】</th>
-          <th><a href="https://github.com/kazu1107" target="_blank">https://github.com/kazu1107</a></th>
-        </tr>
-      </table>
-    </div>
-  </section>
-  <section class="app">
-    <h2>API</h2>
-  </section>
-  <footer class="footer">
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="history.html">HISTORY</a></li>
-        <li><a href="secret.html">SECRET</a></li>
-      </ul>
-    </nav>
-    <p class="copyright">©Copyright Self-Introduction,ALL rights reserved.</p>
-  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#toggle").click(function () {
+        $("#menu").slideToggle();
+        return false;
+      });
+      $(window).resize(function () {
+        var win = $(window).width();
+        var p = 480;
+        if (win > p) {
+          $("#menu").show();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

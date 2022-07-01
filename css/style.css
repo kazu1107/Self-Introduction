@@ -1,146 +1,99 @@
 @charset "UTF-8";
 
-/*ここからヘッダーの内容*/
-/* * {
+#menu {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#menu li {
+  display: block;
+  float: left;
+  width: 25%;
   margin: 0;
   padding: 0;
 }
-*/
-.title {
-  font-size: 200%;
-}
 
-ul {
-  list-style: none;
-}
-
-div {
-  padding: 0 30px;
-}
-
-.header-flex {
-  display: flex;
-  height: 60px;
-  align-items: center;
-}
-
-.header-flex nav {
-  margin-left: auto;
-}
-
-.header-flex ul {
-  display: flex;
-}
-
-.header-flex ul li {
-  margin-left: 20px;
-}
-
-a {
+#menu li a {
+  display: block;
+  padding: 12px 0 10px;
+  background: #333;
+  color: #fff;
+  text-align: center;
   text-decoration: none;
 }
 
-/*ここまでヘッダーの内容*/
-/*ここからhistoryの内容*/
-.title {
-  text-align: center;
+#menu li a:hover {
+  background: #444;
 }
 
-.origin-list .history-list {
-  text-align: center;
-  margin: 0 auto;
+#toggle {
+  display: none;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+@media only screen and (max-width: 768px) {
+  #menu li {
+    width: 50%;
+    border-bottom: 1px solid #444;
+  }
 }
 
-.origin-list .shikaku-list {
-  text-align: center;
-  margin: 0 auto;
-}
+@media only screen and (max-width: 480px) {
+  #menu {
+    display: none;
+  }
 
-.origin-list {
-  display: flex;
-}
+  #menu li {
+    width: 100%;
+  }
 
-@media screen and (max-width: 767px) {
-  .origin-list {
+  #toggle {
     display: block;
-  }
-
-  .origin-list .history-list {
+    position: relative;
     width: 100%;
+    background: #222;
   }
 
-  .origin-list .shikaku-list {
-    width: 100%;
+  #toggle a {
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #toggle:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+  }
+
+  #toggle a:before,
+  #toggle a:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #222;
+  }
+
+  #toggle a:before {
+    margin-top: -6px;
+  }
+
+  #toggle a:after {
+    margin-top: 2px;
   }
 }
-
-/*ここまでhistoryの内容*/
-/*ここからaboutの内容*/
-.pr {
-  text-align: center;
-}
-
-.description .pr-description {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.apply {
-  text-align: center;
-}
-
-.description .apply-description {
-  width: 60%;
-  margin: 0 auto;
-}
-
-/*ここまでaboutの内容*/
-/*ここからindexの内容*/
-.counter {
-  text-align: center;
-}
-
-.my-profile .my-pic {
-  text-align: center;
-}
-
-.my-profile .profile {
-  text-align: center;
-}
-
-.app {
-  text-align: center;
-}
-
-/*ここまでindexの内容*/
-/*ここからフッターの内容*/
-
-
-.footer nav {
-  margin-top: 50px;
-  margin-left: auto;
-  display: flex;
-  height: 20px;
-  align-items: center;
-}
-
-.footer ul {
-  display: flex;
-}
-
-.footer ul li {
-  margin-left: 20px;
-}
-
-.footer .copyright {
-  font-size: 50%;
-  text-align: center;
-}
-
-/*ここまでフッターの内容*/
