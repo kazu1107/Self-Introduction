@@ -7,3 +7,168 @@
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+<body>
+  <header class="header">
+    <div class="header-layout">
+      <h1>Self-Introduction</h1>
+      <div class='btn'>
+        <a href=''>Secret</a>
+      </div>
+    </div>
+    <div id="menu-box">
+      <div id="toggle"><a href="#">menu</a></div>
+      <ul id="menu" class="">
+        <li><a href="./index.html">TOP</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./history.html">HISTORY</a></li>
+        <li><a href="./favorite.html">FAVORITE</a></li>
+      </ul>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <section class="origin-list">
+    <div class="list">
+      <div class="rekishi">
+        <h2>学歴と職歴</h2>
+      </div>
+      <div class="list1">
+        <table border="1">
+          <tr>
+            <th>2012年04月</th>
+            <td>市立札幌旭丘高等学校 入学</td>
+          </tr>
+          <tr>
+            <th>2015年03月</th>
+            <td>市立札幌旭丘高等学校 卒業</td>
+          </tr>
+          <tr>
+            <th>2015年04月</th>
+            <td>河合塾札幌校 入学</td>
+          </tr>
+          <tr>
+            <th>2016年03月</th>
+            <td>河合塾札幌校 卒業</td>
+          </tr>
+          <tr>
+            <th>2016年04月</th>
+            <td>北海道大学経済学部経済学科 入学</td>
+          </tr>
+          <tr>
+            <th>2016年12月</th>
+            <td>ラルズマート伏見店(アルバイト) 入社</td>
+          </tr>
+          <tr>
+            <th>2019年03月</th>
+            <td>ラルズマート伏見店(アルバイト) 退社</td>
+          </tr>
+          <tr>
+            <th>2019年11月</th>
+            <td>桑園自動車学校 入校</td>
+          </tr>
+          <tr>
+            <th>2020年03月</th>
+            <td>北海道大学経済学部経済学科 卒業</td>
+          </tr>
+          <tr>
+            <th>2020年07月</th>
+            <td>桑園自動車学校 卒業</td>
+          </tr>
+          <tr>
+            <th>2020年08月</th>
+            <td>資格の学校TAC札幌校 入学</td>
+          </tr>
+          <tr>
+            <th>2021年02月</th>
+            <td>(株)TMJ(アルバイト) 入社</td>
+          </tr>
+          <tr>
+            <th>2021年07月</th>
+            <td>(株)TMJ(アルバイト) 退社</td>
+          </tr>
+          <tr>
+            <th>2021年10月</th>
+            <td>資格の学校TAC札幌校 卒業</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="list">
+      <div class="shikaku">
+        <h2>資格</h2>
+      </div>
+      <div class="list2">
+        <table border="1">
+          <tr>
+            <th>2020年07月</th>
+            <td>普通自動車第一種運転免許</td>
+          </tr>
+          <tr>
+            <th>2021年11月</th>
+            <td>G検定</td>
+          </tr>
+          <tr>
+            <th>2021年12月</th>
+            <td>ITパスポート</td>
+          </tr>
+          <tr>
+            <th>2022年02月</th>
+            <td>ORACLE MASTER Bronze DBA 2019</td>
+          </tr>
+          <tr>
+            <th>2022年04月</th>
+            <td>LPIC-1 (101&102)</td>
+          </tr>
+          <tr>
+            <th>2022年04月</th>
+            <td>AWS Certified Solutions Architect - Associate</td>
+          </tr>
+          <tr>
+            <th>2022年05月</th>
+            <td>CCNA</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(function () {
+      $("#toggle").click(function () {
+        $("#menu").slideToggle();
+        return false;
+      });
+      $(window).resize(function () {
+        var win = $(window).width();
+        var p = 480;
+        if (win > p) {
+          $("#menu").show();
+        }
+      });
+    });
+  </script>
+  <footer>
+    <div class="foot-wrap">
+      <div class="menu-left">
+        <h3>MENU</h3>
+        <ul class="foot-left">
+          <li><a href="./index.html">TOP</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./history.html">HISTORY</a></li>
+          <li><a href="./favorite.html">FAVORITE</a></li>
+        </ul>
+      </div>
+      <div class="menu-center">
+        <h3>Link</h3>
+        <ul class="foot-center">
+          <li><a href="https://github.com/kazu1107">Github</a></li>
+        </ul>
+      </div>
+
+      <small class="cmark">:copyright:copyright 2022
+        <font color="white">Self-Introduction.</font>
+      </small>
+    </div>
+  </footer>
+</body>
+
+</html>
