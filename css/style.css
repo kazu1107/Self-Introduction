@@ -3,6 +3,12 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  position: relative;
+  /*←相対位置*/
+  padding-bottom: 120px;
+  /*←footerの高さ*/
+  box-sizing: border-box;
   background-color: rgb(199, 199, 199);
 }
 
@@ -25,12 +31,7 @@ body {
   position: relative;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+
 
 html {
   -webkit-box-sizing: border-box;
@@ -297,10 +298,6 @@ table {
   padding-top: 40px;
 }
 
-.origin-list {
-  display: flex;
-}
-
 .origin-list .list {
   text-align: center;
   font-size: 13px;
@@ -314,6 +311,10 @@ table td {
 }
 
 table th {
+  background: #616161;
+}
+
+table td {
   background: #eee;
 }
 
@@ -329,6 +330,168 @@ table th {
 }
 
 /* historyここまで */
+/* favoriteここから */
+
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px;
+  /*スライド左右の余白調整*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  background: #eee;
+}
+
+h2 {
+  font-size: 360%;
+}
+
+h2,
+p {
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/* favoriteここまで */
+/* certificationここから */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 113px;
+  margin-bottom: 2%;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+
+}
+
+@media only screen and (max-width: 600px) {
+  fieldset {
+    margin-top: 80px;
+  }
+}
+
+.certification-title {
+  background: #333;
+  padding: 20px 0;
+  /*PADDING TODOS OS LADOS DE 20PX*/
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  background: #f0f0f0;
+  padding: 6% 4%;
+}
+
+input[type="password"] {
+  width: 76%;
+  height: 20px;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 4% 4% 4% 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 95%;
+  color: #555;
+}
+
+.iconPassword {
+  width: 20px;
+  height: 20px;
+  background-color: #004A3E;
+  float: left;
+  padding: 4% 4% 4% 4%;
+  margin-bottom: 4%;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f09c-32.png);
+  background-position: center;
+  border: 1px solid #ccc;
+}
+
+.iconUser {
+  width: 20px;
+  height: 20px;
+  background-color: #004A3E;
+  float: left;
+  padding: 4% 4% 4% 4%;
+  margin-bottom: 4%;
+  background-repeat: no-repeat;
+  background-image: url(https://cdn4.iconfinder.com/data/icons/font-awesome-2/2048/f007-32.png);
+  background-position: center;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: 76%;
+  height: 20px;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 4% 4% 4% 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 95%;
+  color: #555;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: #333;
+  border: 0;
+  padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+}
+
+input[type="submit"]:hover {
+  background: #616161;
+  transition: 0.7s;
+}
+
+::-webkit-input-placeholder {}
+
+/* certificationここまで */
 /* フッターここから */
 
 footer {
