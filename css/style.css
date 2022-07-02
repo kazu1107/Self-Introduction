@@ -3,9 +3,10 @@
 
 body {
   margin: 0;
+  background-color: rgb(199, 199, 199);
 }
 
-/* ヘッダーここから　*/
+/* ヘッダーここから */
 
 .header .header-layout h1 {
   line-height: 260%;
@@ -169,7 +170,7 @@ html {
   box-shadow: none;
 }
 
-/*　ヘッダーここまで　*/
+/* ヘッダーここまで */
 /* メインここから */
 
 .main-top {
@@ -191,13 +192,11 @@ html {
   width: 250px;
   padding: 1.6rem;
   margin: 0 auto;
-  margin-top: 95px;
+  margin-top: 86px;
 }
 
 .profile__img {
   width: 100%;
-  max-width: 200px;
-
 }
 
 .profile__name,
@@ -226,7 +225,10 @@ html {
 
 @media only screen and (max-width: 600px) {
   .profile {
-    height: 300px;
+    width: 180px;
+  }
+  .profile__img {
+    width: 100%;
   }
 }
 
@@ -246,13 +248,13 @@ footer {
   display: inline-block;
   vertical-align: top;
   width: 20%;
-  margin: 10px auto;
+  margin: 7px auto;
 }
 
 .foot-wrap ul {
   list-style: none;
   padding: 0;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .foot-wrap {
@@ -264,7 +266,7 @@ footer {
 .foot-wrap h3 {
   /*border-bottom: 3px solid #2fccba;*/
   border-bottom: 2px solid hsl(0, 0%, 38%);
-  padding: 10px;
+  padding: 7px;
 }
 
 .foot-wrap a {
