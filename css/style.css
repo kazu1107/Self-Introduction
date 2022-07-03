@@ -431,7 +431,7 @@ input[type="password"] {
 .iconPassword {
   width: 20px;
   height: 20px;
-  background-color: #004A3E;
+  background-color: #6e6e6e;
   float: left;
   padding: 4% 4% 4% 4%;
   margin-bottom: 4%;
@@ -444,7 +444,7 @@ input[type="password"] {
 .iconUser {
   width: 20px;
   height: 20px;
-  background-color: #004A3E;
+  background-color: #6e6e6e;
   float: left;
   padding: 4% 4% 4% 4%;
   margin-bottom: 4%;
