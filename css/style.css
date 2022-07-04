@@ -392,14 +392,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-fieldset {
+.certification-box {
   width: 400px;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 2%;
   transition: opacity 1s;
   -webkit-transition: opacity 1s;
-
 }
 
 .certification-title {
@@ -486,6 +485,37 @@ input[type="submit"]:hover {
 ::-webkit-input-placeholder {}
 
 /* certificationここまで */
+/* secretここから */
+
+.secret-img {
+  text-align: center;
+}
+
+.secret-img img {
+  height: 400px;
+  margin-top: 24px;
+}
+
+/* secretここまで */
+/* errここから */
+
+.erroor-box {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 2%;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.err-message {
+  font-size: 30px;
+  text-align: center;
+  color: #ff0000;
+  padding-top: 60px;
+}
+
+/* errここまで */
 /* フッターここから */
 
 footer {

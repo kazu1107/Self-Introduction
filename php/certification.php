@@ -13,9 +13,9 @@ if (isset($_POST['name'])) {
       /*print "<p>ログイン成功</p>";*/
       header('Location: http://localhost:80/html/secret.html');
     } else {
-      print "<p>ログイン失敗(pass)</p>";
+      header('Location: http://localhost:80/html/password-err.html');
     }
   } else {
-    print "<p>ログイン失敗(user)</p>";
+    header('Location: http://localhost:80/html/name-err.html');
   }
 }
