@@ -332,10 +332,16 @@ table td {
 /* historyここまで */
 /* favoriteここから */
 
-.slider img {
+.slider li {
+  height: 180px;
+  /*スライダー内の画像を横幅100%に*/
+
+}
+
+.slider li img {
   height: 100%;
   /*スライダー内の画像を横幅100%に*/
-  height: auto;
+
 }
 
 /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
