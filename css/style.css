@@ -48,7 +48,7 @@ html {
 #menu li {
   display: block;
   float: left;
-  width: 25%;
+  width: 20%;
   margin: 0;
   padding: 0;
   border-top: 2px solid hsl(0, 0%, 38%);
@@ -274,6 +274,12 @@ html {
   line-height: 1.6rem;
 }
 
+@media screen and (max-width: 767px) {
+  .profile {
+    margin-top: 143px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .profile {
     width: 180px;
@@ -329,6 +335,8 @@ table td {
   }
 }
 
+
+
 /* historyここまで */
 /* favoriteここから */
 
@@ -382,6 +390,18 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .favorite_title{
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .favorite_title{
+    margin-top: 10px;
+  }
 }
 
 /* favoriteここまで */
@@ -502,6 +522,13 @@ input[type="submit"]:hover {
   margin-top: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .secret-img img {
+    display: block;
+    margin: 140px auto 0;
+  }
+}
+
 /* secretここまで */
 /* errここから */
 
@@ -519,6 +546,12 @@ input[type="submit"]:hover {
   text-align: center;
   color: #ff0000;
   padding-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .err-message {
+    padding-top: 150px;
+  }
 }
 
 /* errここまで */
