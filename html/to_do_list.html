@@ -13,7 +13,7 @@
     <div class="header-layout">
       <h1>Self-Introduction</h1>
       <div class="btn">
-        <a href="./certification.html">Secret</a>
+        <a href="./index.html">Top</a>
       </div>
     </div>
     <div id="menu-box">
@@ -27,9 +27,28 @@
       </ul>
     </div>
   </header>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+  <form action="../php/to_do_list.php" method="post">
+    Form:<br />
+    <input type="text" name="text" size="10" value="" /><br />
+    <br />
+    <input type="submit" value="保存する" />
+  </form>
+  <script>
+    $(function () {
+      $("#toggle").click(function () {
+        $("#menu").slideToggle();
+        return false;
+      });
+      $(window).resize(function () {
+        var win = $(window).width();
+        var p = 480;
+        if (win > p) {
+          $("#menu").show();
+        }
+      });
+    });
+  </script>
   <footer>
     <div class="foot-wrap">
       <div class="menu-left">
