@@ -30,12 +30,80 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <form action="../php/add_to_do.php" method="post">
     Form:<br />
-    <input type="text" name="text" size="10" value="" required/><br />
+    <input type="text" name="text" size="10" value="" required /><br />
     <br />
     <input type="submit" value="保存する" />
   </form>
 
-  
+  <?php
+
+  header("Content-type: text/html; charset=utf-8");
+
+  require_once("../php/db_sample01.php");
+  $mysqli = db_connect();
+
+  $sql = "SELECT * FROM to_do";
+
+  $result = $mysqli->query($sql);
+
+  //クエリー失敗
+  if (!$result) {
+    echo $mysqli->error;
+    exit();
+  }
+
+  //連想配列で取得
+  while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+    $rows[] = $row;
+  }
+
+  //結果セットを解放
+  $result->free();
+
+  // データベース切断
+  $mysqli->close();
+
+  ?>
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>text一覧</title>
+  </head>
+
+  <body>
+    <h1>text一覧</h1>
+
+    <table border='1'>
+      <tr>
+        <td>text</td>
+        <td>textを削除する</td>
+      </tr>
+
+      <?php
+      foreach ($rows as $row) {
+      ?>
+
+        <tr>
+          <td><?= htmlspecialchars($row['text'], ENT_QUOTES, 'UTF-8') ?></td>
+          <td>
+            <form action="../php/delete2.php" method="post">
+              <input type="submit" value="削除する">
+              <input type="hidden" name="id" value="<?= $row['id'] ?>">
+            </form>
+          </td>
+        </tr>
+
+      <?php
+      }
+      ?>
+
+    </table>
+
+  </body>
+
+  </html>
 
   <script>
     $(function() {

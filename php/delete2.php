@@ -25,7 +25,7 @@ if(empty($_POST)) {
 			
 			//変更された行の数が1かどうか
 			if($stmt->affected_rows == 1){
-				echo "削除いたしました。";
+				header('Location: http://localhost:80/html/to_do_list.php');
 			}else{
 				echo "削除失敗です";
 			}

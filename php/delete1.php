@@ -37,14 +37,13 @@ $mysqli->close();
 <h1>text一覧</h1> 
 
 <table border='1'>
-<tr><td>id</td><td>text</td><td>textを削除する</td></tr>
+<tr><td>text</td><td>textを削除する</td></tr>
 
 <?php 
 foreach($rows as $row){
 ?>
 
 <tr> 
-	<td><?=$row['id']?></td>
 	<td><?=htmlspecialchars($row['text'], ENT_QUOTES, 'UTF-8')?></td>
 	<td>
 		<form action="delete2.php" method="post">
