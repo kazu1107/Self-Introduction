@@ -14,7 +14,7 @@
     <div class="header-layout">
       <h1>Self-Introduction</h1>
       <div class="btn">
-        <a href="./index.html">Top</a>
+        <a href="./certification.html">Secret</a>
       </div>
     </div>
     <div id="menu-box">
@@ -29,11 +29,11 @@
     </div>
   </header>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <form action="../php/add_to_do.php" method="post">
-    Form:<br />
-    <input type="text" name="text" size="10" value="" required /><br />
+  <h1 style="text-align: center; margin-top: 120px;font-size: 320%;">TO DO LIST</h1>
+  <form action="../php/add_to_do.php" method="post" class="add_to_do_list" style="display: flex; justify-content: center;">
+    <textarea required name="text" size="10" value="" style="width: 60%;" placeholder="ここに内容を入力してください"></textarea><br />
     <br />
-    <input type="submit" value="保存する" />
+    <input type="submit" value="追加" style="width: 10%;" />
   </form>
 
   <?php
@@ -74,12 +74,12 @@
   </head>
 
   <body>
-    <h1>text一覧</h1>
+    <h1 style="text-align: center;">text一覧</h1>
 
-    <table border='1'>
+    <table border='1' style="width: 65%;">
       <tr>
-        <td>text</td>
-        <td>textを削除する</td>
+        <td style="text-align: center; font-size: 13px;">text</td>
+        <td style="width: 25%; font-size: 13px;">textを削除する</td>
       </tr>
 
       <?php
