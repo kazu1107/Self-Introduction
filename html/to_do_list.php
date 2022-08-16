@@ -6,6 +6,7 @@
   <title>Self-Introduction</title>
   <link rel="stylesheet" href="../css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon/favicon.ico" id="favicon">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
 
   header("Content-type: text/html; charset=utf-8");
 
-  require_once("../php/db_sample01.php");
+  require_once("../php/db_connect.php");
   $mysqli = db_connect();
 
   $sql = "SELECT * FROM to_do";
@@ -88,7 +89,7 @@
         <tr>
           <td><?= htmlspecialchars($row['text'], ENT_QUOTES, 'UTF-8') ?></td>
           <td>
-            <form action="../php/delete2.php" method="post">
+            <form action="../php/delete_to_do.php" method="post">
               <input type="submit" value="削除する">
               <input type="hidden" name="id" value="<?= $row['id'] ?>">
             </form>

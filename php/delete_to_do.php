@@ -1,38 +1,44 @@
 <?php
 
-try {
-    // DB接続
-    $pdo = new PDO(
-        // ホスト名、データベース名
-        'mysql:charset=UTF8;
-        host=127.0.0.1;
-        dbname=to_do_list;',
-        // ユーザー名
-        'root',
-        // パスワード
-        'root0629',
-        // レコード列名をキーとして取得させる
-        [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
-    );
+header("Content-type: text/html; charset=utf-8");
 
-    // SQL文をセット
-    $stmt = $pdo->prepare("DELETE FROM to_do WHERE id = :id");
+require_once("db_connect.php");
+$mysqli = db_connect();
 
-    $id = $_POST['id'];
-			$stmt->bindParam(':id', $id, PDO::PARAM_INT);
-			
+if(empty($_POST)) {
+	echo "<a href='../html/to_do_list.php'>to_do_list.php</a>←こちらのページからどうぞ";
+	exit();
+}else{
+	if (!isset($_POST['id'])  || !is_numeric($_POST['id']) ){
+		echo "IDエラー";
+		exit();
+	}else{
+		//プリペアドステートメント
+		$stmt = $mysqli->prepare("DELETE FROM to_do WHERE id=?");
+		
+		if($stmt){
+			//プレースホルダへ実際の値を設定する
+			$stmt->bind_param('i', $id);
+			$id = $_POST['id'];
 					
 			$stmt->execute();
-
-
-  } catch (PDOException $e) {
-    // エラー発生
-    echo $e->getMessage();
-
-} finally {
-    // DB接続を閉じる
-    $pdo = null;
+			
+			//変更された行の数が1かどうか
+			if($stmt->affected_rows == 1){
+				header('Location: http://localhost:80/html/to_do_list.php');
+			}else{
+				echo "削除失敗です";
+			}
+		
+			//ステートメント切断
+			$stmt->close();
+		}else{
+			echo $mysqli->errno . $mysqli->error;
+		}
+	}
 }
-header('Location: http://localhost:80/html/to_do_list.php');
 
+// データベース切断
+$mysqli->close();
+		
 ?>
