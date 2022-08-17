@@ -2,7 +2,11 @@
 
 このサイトは簡単な私の自己紹介サイトです。
 
-# イメージ
+![sample1](https://user-images.githubusercontent.com/97272142/185055277-94777364-0c8b-4b8b-beab-be7845120d74.png)  
+![sample2](https://user-images.githubusercontent.com/97272142/185055334-6faf9da0-716f-4709-8147-944f0c0fc841.png)  
+![sample3](https://user-images.githubusercontent.com/97272142/185055357-4d1da2aa-ab25-4d8d-8291-91b4b2fe7b19.png)
+
+
 
 "hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
 
